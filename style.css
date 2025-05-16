@@ -1,0 +1,222 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+/* Variables */
+:root {
+    --font-size:1rem; 
+    --couleur-transparente: rgba(0, 0, 0, 0.158)
+}
+
+.light-mode {
+    --navbar-color : #222;
+    --navbar-bg-color: #F0F0F0;
+}
+
+.dark-mode {
+    --navbar-color : #FFF;
+    --navbar-bg-color: #000;
+}
+
+.transparent-mode {
+    --navbar-color : #F0F0F0;
+    --navbar-bg-color : var(--couleur-transparente)
+}
+
+
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/* Basic style */
+body {
+    font-size: var(--font-size);
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url(Images/Piscine-Pexels.jpg); */
+}
+
+.main_content {
+    padding: 1rem;
+}
+
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 10px;
+    color: var(--navbar-color);
+    background:var(--navbar-bg-color);
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.navbar_links {
+    display: flex;
+}
+
+.navbar_link {
+    padding: 0 10px;
+}
+
+.navbar_link > a {
+    text-decoration: none;
+    color: var(--navbar-color);
+}
+
+.burger {
+    display: none; /* le menu se colle à droite*/
+}
+
+
+
+/* Small devices (petits écrans) */
+@media screen and (max-width:767px) {
+    .navbar_links {
+        display: flex;
+        flex-direction: column;
+        width: 30%; /* Prendre toute la largeur */
+        height: auto; /* Ajuster la hauteur automatiquement */
+        position: absolute;
+        top: 90px; /* Placer la liste sous la navbar */
+        left:10; /* Positionner à gauche */
+        background: var(--navbar-bg-color);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+        border-radius: 5px;
+        overflow-wrap: break-word; 
+    }
+
+    .show-nav .navbar_links {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .navbar_link {
+        opacity: 0;
+        transform: translateX(-50px); /* Les éléments arrivent par le bas */
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .show-nav .navbar_link {
+        opacity: 1;
+        transform: translateY(0); /* Animation des liens */
+    }
+
+    .navbar_link > a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.2rem;
+        transition: all .4s ease-in-out;
+    }
+
+    .navbar_link > a:hover {
+        padding-left: 2rem;
+        letter-spacing: 5px;
+    }
+
+    /* Toggle menu (menu de basculement) */
+    .burger {
+        display: block;
+        position: relative;
+        padding-left: 10px;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: var(--navbar-color);
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+    }
+
+    .show-nav .bar {
+        width: 0;
+        background: transparent;
+    }
+    .bar::before, .bar::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 2px;
+        padding-left: 0px;
+        position: absolute;
+        left: 10;
+        background: var(--navbar-color);
+        border-radius: 3px;
+        transition:all .5s ease-in-out;
+    }
+
+    .bar::before {
+        transform: translateY(-12px);
+    }
+
+    .show-nav .bar::before {
+        transform: rotate(45deg);
+    }
+
+    .bar::after {
+        transform: translateY(12px);
+    }
+
+    .show-nav .bar::after {
+        transform: rotate(-45deg);
+    }
+}
+
+/* Animations */
+.show-nav .first {
+    transition: all 0.5s ease-out;
+}
+.show-nav .second {
+    transition: all 0.6s ease-out;
+}
+.show-nav .third {
+    transition: all 0.7s ease-out;
+}
+.show-nav .four {
+    transition: all 0.8s ease-out;
+}
+.show-nav .fifth {
+    transition: all 0.9s ease-out;
+}
+
+
+
+
+/* médium devices (écrans moyens) */
+@media screen and (min-width:768px) {
+    .navbar_link > a::after {
+        display: block;
+        content: "";
+        width:0;
+        height: 1px;
+        background: var(--navbar-color);
+        transition:width .4s;
+    }
+     .navbar_link:hover > a::after {
+        width: 100%;
+     }
+}
+
