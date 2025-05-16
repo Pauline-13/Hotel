@@ -1,9 +1,28 @@
-[
-    {
-        "chambres": [
-            "chabre de Luxe",
-            "chambres",
-            "chambres"
-        ]
-    }
+{
+    "ids":[
+  {
+    "id": 1,
+    "nom": "Chambre haute gamme",
+    "description": "",
+    "image": "./assets/img/services/spa.jpg"
+  },
+  {
+    "id": 2,
+    "nom": "Chambre moyenne gamme",
+    "description": "",
+    "image": "./assets/img/services/fitness.jpg"
+  },
+  {
+    "id": 3,
+    "nom": "Chambre enfant",
+    "description": "",
+    "image": "./assets/img/services/concierge.jpg"
+  },
+  {
+    "id": 4,
+    "nom": "chambre",
+    "description": "",
+    "image": "./assets/img/services/piscine.jpg"
+  }
 ]
+}
