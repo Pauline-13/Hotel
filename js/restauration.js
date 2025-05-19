@@ -1,3 +1,5 @@
+const btn = document.getElementById('btn');
+
 fetch("../Json/restaurant.json")
 .then((response) => response.json())
 
@@ -6,7 +8,8 @@ fetch("../Json/restaurant.json")
     resultsCartes = json.carte;
     afficheur(resultsCartes);
   });
-const sectionElement = document.querySelector("section");
+const sectionElement = document.getElementById("dialogue");
+sectionElement.style.display = "none";
 function afficheur(carte) {
     
     const titre = document.createElement("h2");
@@ -80,9 +83,14 @@ function afficheur(carte) {
     `;
     sectionElement.appendChild(divElement);
   });
+
         
         
     
 };
 
 
+function ici() {
+sectionElement.style.display = "block";
+afficheur(carte)
+};
