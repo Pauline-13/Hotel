@@ -1,20 +1,68 @@
-[
-    {
-        "Carte":[
-            "efeffbf",
-            "fffvvfv",
-            "zffgvg",
-            "zvfvr",
-            "gzfzdz"
-        ],
-        "horaires":[
-            "fzfdf",
-            "zfgzf",
-            "zfzefzf",
-            "zfgzv",
-            "fzdvgv"
-        ]
-
-
-    }
-]
+{
+        
+  "carte": {
+    "theme": "Nature & Montagne",
+    "entrees": [
+      {
+        "nom": "Assiette de charcuterie artisanale",
+        "description": "Saucisson, jambon cru et viande des Grisons, servis avec pain de campagne",
+        "prix": 9.5,
+        "image": "./assets/img/entrees/charcuterie.jpg"
+      },
+      {
+        "nom": "Velouté de potiron bio",
+        "description": "Préparé avec des légumes locaux et une pointe de crème",
+        "prix": 7,
+        "image": "./assets/img/entrees/veloute.jpg"
+      }
+    ],
+    "plats": [
+      {
+        "nom": "Tartiflette de montagne",
+        "description": "Pommes de terre, reblochon fermier, oignons et lardons, gratinés au four",
+        "prix": 15.9,
+        "image": "./assets/img/plats/tartiflette.jpg"
+      },
+      {
+        "nom": "Truite grillée des Alpes",
+        "description": "Truite entière, grillée avec herbes sauvages et citron",
+        "prix": 18.5,
+        "image": "./assets/img/plats/truite.jpg"
+      },
+      {
+        "nom": "Ravioles forestières",
+        "description": "Pâtes fraîches farcies aux champignons, sauce à la crème et persil",
+        "prix": 14,
+        "image": "./assets/img/plats/ravioles.jpg"
+      }
+    ],
+    "desserts": [
+      {
+        "nom": "Tarte aux myrtilles sauvages",
+        "description": "Tarte maison avec fruits des bois cueillis en montagne",
+        "prix": 6,
+        "image": "./assets/img/desserts/myrtilles.jpg"
+      },
+      {
+        "nom": "Fondant au chocolat et noisettes",
+        "description": "Servi tiède avec une boule de glace vanille",
+        "prix": 6.5,
+        "image": "./assets/img/desserts/fondant.jpg"
+      }
+    ],
+    "boissons": [
+      {
+        "nom": "Vin blanc de Savoie (verre)",
+        "description": "Apremont AOC, sec et fruité",
+        "prix": 4.5,
+        "image": "./assets/img/boissons/vin_blanc.jpg"
+      },
+      {
+        "nom": "Infusion maison aux plantes des montagnes",
+        "description": "Menthe, thym, verveine du jardin",
+        "prix": 3.5,
+        "image": "./assets/img/boissons/infusion.jpg"
+      }
+    ]
+  }
+}

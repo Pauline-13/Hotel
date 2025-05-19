@@ -10,13 +10,13 @@
     "id": 2,
     "nom": "Chambre moyenne gamme",
     "description": "",
-    "image": "./assets/img/services/fitness.jpg"
+    "image": "../Images/Piscine-Pexels.jpg"
   },
   {
     "id": 3,
     "nom": "Chambre enfant",
     "description": "",
-    "image": "./assets/img/services/concierge.jpg"
+    "image": "../Images/istockphoto-1690616343-2048x2048.jpg"
   },
   {
     "id": 4,
