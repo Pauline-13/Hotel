@@ -1,0 +1,18 @@
+section{
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 40px;
+}
+section div{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+.bien {
+    display: flex;
+    flex-direction: column;
+}
