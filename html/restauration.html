@@ -4,10 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/restaurant.css">
-    <title>Document</title>
+    <title>Carte</title>
 </head>
 <body>
-    <section></section>
+<!-- <nav class="navbar dark-mode" role="navigation">  -->
+
+    <nav class="navbar transparent-mode" role="navigation"> 
+        
+        <button class="burger">
+            <span class="bar"></span>
+        </button>
+        
+      <div class="navbar_logo"><img src="../Images/Logo.png"> </div>
+
+      <ul class="navbar_links">
+        <li class="navbar_link second"><a href="#">Hébergement</a></li>
+        <li class="navbar_link third"><a href="#">Restaurant</a></li>
+        <li class="navbar_link four"><a href="#">Services</a></li>
+        <li class="navbar_link fifth"><a href="#">Célébrités</a></li>
+      </ul>
+    </nav>
+
+<main>
+    <aside>
+        <video> <!--Ajouter autoplay muted loop pour qu'elle joue continuellement -->
+        <source src="../Images/3297798-uhd_4096_2160_25fps.mp4" type="video/webm" />
+
+        <source src="../Images/1675449-hd_1920_1080_30fps.mp4" type="video/mp4" />
+
+        <a href="../Images/1675449-hd_1920_1080_30fps.mp4">WEBM</a>
+        <a href="../Images/1675449-hd_1920_1080_30fps.mp4">MP4</a>
+      </video>
+    </aside>
+
+   <div id="principale">
+    <h1>Notre Restaurant</h1>
+
+    <img class="img_resto" src="../Images/Restaurant/pexels-quark-studio-1159039-3201921.jpg" alt="">
+
+    <p class="text_resto_one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt maiores repudiandae, nobis vitae quibusdam nihil eum a provident commodi. Animi dolores dolorem ipsam nesciunt! Iste natus beatae iure voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, sint exercitationem magnam dicta tempora nam delectus soluta iusto sapiente? Illum, dicta. Mollitia neque adipisci labore architecto cumque eos inventore obcaecati.</p>
+
+        <br><br>
+        
+        <div class="container_resto">
+        <p class="text_resto_two"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, amet consequatur aperiam et odio aliquam est! Vitae eos architecto velit, cum iusto at tempora deserunt, asperiores, nobis deleniti facilis adipisci sint illo excepturi laudantium vel inventore! Ab amet dolores nesciunt quisquam consequatur dolore optio, eaque neque voluptatum, iste quasi accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            
+            <br><br>
+
+        Quam, sint qui? Saepe reiciendis eius iusto esse perferendis maiores ipsa ducimus harum libero corrupti voluptatem, consequuntur sint quaerat quia eos doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, delectus magni eveniet dolores ipsam et vero quo. Ut, delectus. Eius nobis nemo nostrum ratione accusamus. Architecto expedita totam obcaecati accusamus!
+            <br><br><br>
+            Horaires : 9h00 - 12h00 / 13h00 - 18h00 
+        </p>
+        <img src="../Images/Restaurant/tori-wise-iM2xseY_fR8-unsplash.jpg" alt="">
+        </div>
+           <!-- <p class="text_resto_three">Horaires : 9h00 - 12h00 / 13h00 - 18h00 </p> -->
+    
+    <button id="carte" onclick="ici()">Carte</button>
+   </div> 
+</main>
+
+
+    <section id="dialogue">Boîte de dialogue</section>
     <script src="../js/restauration.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
