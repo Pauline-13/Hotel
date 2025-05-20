@@ -1,10 +1,11 @@
-[
-  {
+{
+ "services" : [
+   {
     "id": 1,
     "nom": "Spa et bien-être",
     "description": "Profitez d’un moment de détente dans notre spa aux senteurs tropicales avec massages, sauna et hammam inclus.",
     "horaire": "10h - 20h",
-    "image": "./assets/img/services/spa.jpg"
+    "image": "../Images/intérieur/sherzod-gulomov-npE_I2GzpHY-unsplash.jpg"
   },
   {
     "id": 2,
@@ -28,3 +29,4 @@
     "image": "./assets/img/services/piscine.jpg"
   }
 ]
+}

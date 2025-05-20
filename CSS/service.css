@@ -36,101 +36,94 @@
     outline: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+     background-color: #2E374C;
+}
+
 ul {
     list-style: none;
 }
 
-
-
-/* Basic style */
-body {
-    font-size: var(--font-size);
-    font-family: 'Poppins', sans-serif;
-    /* background-color: #50563fa4; */
-     background-color: #4E5166;
-     background-color: #2E374C;
-
-}
-
-main {
-   
-    width: 100%;
-    height: 100vh;
-   
-}
-
-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 50vw;
-    height: 80vh;
-    transform: rotate(90deg) translate(10%, 35%); 
-    opacity: 0.8;
-}
-
-#principale {
-    /* border: 1px solid black; */
-    position: absolute;
+section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 70%;
-    height: 100vh;
-    left: 28%;
+    border: 3px solid green;
+    position: absolute;
+    left: 20%;
+    width: 80%;
 }
 
-#principale h1 {
+.container_section {
+    border: 3px solid yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.img_aside {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 300px;
+    height: 100vh;
+    opacity: 0.8;
+    border-right: 1px solid #AE9A64;
+}
+
+h1 {
     color: #f0f0f0;
     color: #AE9A64;
     font-family: "Spectral SC", serif;
     font-weight: 300;
     font-size: 4.5rem;
     margin: 30px 0;
+    text-align: center;
 }
 
-.img_resto {
-    width: 80%;
-    opacity: 0.8;
+.image_service {
+    width: 500px;
+    height: 300px;
 }
 
-.text_resto_one {
-    /* border: 1px solid green; */
-    /* color: #F0F0F0; */
-    color: #222;
-    color: #AE9A64;
-    padding: 10px 30px;
-    text-align: justify;
-    margin-top: 20px;
+.container_txt {
+    border: 1px solid red;
+}
+.txt_service {
+   color: #AE9A64;
 }
 
-.container_resto {
-    width: 100%;
+
+/* Basic style */
+body {
+    font-size: var(--font-size);
+    font-family: 'Poppins', sans-serif;
+    background-image: url(Images/Intérieur/Elegant\ Hotel\ Lobby\ With\ Minimalist\ Design\ And\ Art\ Piece.png);
+    background-size: cover;
+}
+
+.main_content {
     display: flex;
-   
+    justify-content: start;
+    align-items: start;
+    height: 800px;
+    padding: 1rem;
 }
 
-.text_resto_two {
-    width: 75%;
-    /* border: 1px solid red; */
-    color: #222;
-    color: #AE9A64;
-    padding: 0 20px;
-    text-align: justify;
-}
-
-.container_resto img {
-    width: 20%;
-    height: 320px;
-    margin: 5px 15px;
-}
-
-#carte {
-    position: relative;
+.main_title {
+    color: #FFFFFF;
+    /* color: rgba(66, 46, 8, 0.521); */
+    /* background-color: var(--couleur-transparente); */
+    font-family: "Spectral SC", serif;
+    font-size: 5rem;
+    font-weight: lighter;
     padding: 10px;
-    right: -20%;
-    bottom: 10%;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 200px;
+    margin-left: 50px;
 }
 
 /* Navbar */
@@ -153,7 +146,6 @@ video {
 .navbar_logo img {
     height: 100%;
 }
-
 .navbar_links {
     display: flex;
 }
@@ -312,25 +304,3 @@ video {
      }
 }
 
-#dialogue {
-    font-family: "Spectral SC", serif;
-    align-items: center;
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 40px;
-}
-
-#dialogue div{
-    display: flex;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-}
-
-.bien {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
