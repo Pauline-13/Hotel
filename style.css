@@ -46,7 +46,7 @@ ul {
 body {
     font-size: var(--font-size);
     font-family: 'Poppins', sans-serif;
-    background-image: url(Images/Extérieur/pexels-kirill-pershin-630641-2262621.jpg);
+    background-image: url(Images/Intérieur/Elegant\ Hotel\ Lobby\ With\ Minimalist\ Design\ And\ Art\ Piece.png);
     background-size: cover;
 }
 
@@ -87,9 +87,13 @@ body {
 }
 
 .navbar_logo {
-    padding: 0px 5px
+    padding: 0px 5px;
+    height: 100%;
 }
 
+.navbar_logo img {
+    height: 100%;
+}
 .navbar_links {
     display: flex;
 }
