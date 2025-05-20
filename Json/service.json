@@ -12,21 +12,21 @@
     "nom": "Salle de sport",
     "description": "Accès libre 24h/24 à notre salle de fitness équipée de matériel haut de gamme et de cours en ligne.",
     "horaire": "24h/24",
-    "image": "./assets/img/services/fitness.jpg"
+    "image": "../Images/Piscine/intenza-fitness-5cXaSUBBqkg-unsplash.jpg"
   },
   {
     "id": 3,
-    "nom": "Conciergerie",
+    "nom": "Kids Club",
     "description": "Réservations, conseils touristiques, organisation de vos déplacements : notre équipe est à votre écoute.",
     "horaire": "7h - 23h",
-    "image": "./assets/img/services/concierge.jpg"
+    "image": "../Images/Intérieur/deen-david-DlIBzcjR_DU-unsplash.jpg"
   },
   {
     "id": 4,
     "nom": "Piscine à débordement",
-    "description": "Baignade avec vue sur l’océan. Bar à cocktails et transats à disposition.",
+    "description": "Baignade avec vue sur la montagne. Bar à cocktails et transats à disposition.",
     "horaire": "8h - 21h",
-    "image": "./assets/img/services/piscine.jpg"
+    "image": "../Images/Piscine/pexels-pixabay-458541.jpg"
   }
 ]
 }

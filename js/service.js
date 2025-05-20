@@ -29,10 +29,11 @@ function afficheur(services) {
         divElement.innerHTML = `
         
         <div class="container_section">
-        <h2 class="txt_service"><strong>${nom}</strong></h2>
         <img class="image_service" src="${image}" alt="">
-
+        
         <div class="container_txt">
+        <h2 class="txt_service"><strong>${nom}</strong></h2>
+        <hr>
         <p class="txt_service">${info}</p>
         <p class="txt_service">${horaire}</p>
         </div>
