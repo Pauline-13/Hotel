@@ -51,26 +51,30 @@ ul {
 section {
     display: flex;
     flex-direction: column;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     position: absolute;
-    left: 20%;
+    /* left: 20%; */
     width: 80%;
 }
 
 .container_section {
-    border: 3px solid yellow;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 30px;
+    /* border: 3px solid yellow; */
+    margin: 20px 0;
 }
 
 .img_aside {
     position: fixed;
     top: 0;
+    right: 0;
     z-index: -1;
     width: 300px;
     height: 100vh;
     opacity: 0.8;
     border-right: 1px solid #AE9A64;
+    transform: scaleX(-1);
 }
 
 h1 {
@@ -84,15 +88,22 @@ h1 {
 }
 
 .image_service {
-    width: 500px;
-    height: 300px;
+    width: 45%;
+    height: 320px;
+    padding-left: 20px;
+}
+
+.image_service:hover {
+    scale: 1.5;
 }
 
 .container_txt {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    width: 50%;
+    text-align: center;
 }
 .txt_service {
-   color: #AE9A64;
+    color: #AE9A64;
 }
 
 
@@ -102,28 +113,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background-image: url(Images/Intérieur/Elegant\ Hotel\ Lobby\ With\ Minimalist\ Design\ And\ Art\ Piece.png);
     background-size: cover;
-}
-
-.main_content {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    height: 800px;
-    padding: 1rem;
-}
-
-.main_title {
-    color: #FFFFFF;
-    /* color: rgba(66, 46, 8, 0.521); */
-    /* background-color: var(--couleur-transparente); */
-    font-family: "Spectral SC", serif;
-    font-size: 5rem;
-    font-weight: lighter;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 200px;
-    margin-left: 50px;
 }
 
 /* Navbar */
