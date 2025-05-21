@@ -4,32 +4,42 @@
       "id": 1,
       "nom": "Suite Sapin Royal",
       "description": "Chambre haut de gamme <br><br><br>  Nichée au cœur du bois, avec vue panoramique sur les montagnes, cheminée et bain nordique privatif. <br><br> Idéale pour un séjour luxueux au cœur de la nature. <br><br><br><br>Prix : 350€ / nuit",
-      "image": [
+      "images": [
         "../Images/Chambre-SDB/lifestyle-3107041_1280.jpg",
         "../Images/Chambre-SDB/pexels-bruno-saito-1366548-17735412.jpg",
         "../Images/Chambre-SDB/loewe-technology-dUBXESsJvZ4-unsplash.jpg"
-        
-       ]
+      ]
     },
     {
       "id": 2,
       "nom": "Chambre Cascade",
-      "description": "Chaleureuse chambre de moyenne gamme inspirée par les torrents alpins, avec matériaux naturels, terrasse et calme absolu. Parfaite pour un week-end ressourçant. Prix : 150€ / nuit",
-      "image": "../Images/Piscine-Pexels.jpg"
+      "description": "Chaleureuse chambre de moyenne gamme <br><br><br> inspirée par les torrents alpins, avec matériaux naturels, terrasse et calme absolu.  <br><br> Parfaite pour un week-end ressourçant.<br><br><br><br> Prix : 150€ / nuit",
+      "images": [
+        "../Images/Piscine-Pexels.jpg"
+        "../Images/Chambre-SDB/lifestyle-3107041_1280.jpg",
+        "../Images/Chambre-SDB/pexels-bruno-saito-1366548-17735412.jpg",
+        "../Images/Chambre-SDB/loewe-technology-dUBXESsJvZ4-unsplash.jpg"
+      ]
     },
     {
       "id": 3,
       "nom": "Chambre des Marmottes",
-      "description": "Chambre pensée pour les enfants, décorée avec des animaux de la montagne et un espace de jeux en bois. Lit cabane et ambiance ludique au rendez-vous. Prix : 80€ / nuit",
-      "image": [
-
+      "description": "Chambre pensée pour les enfants, <br><br><br> décorée avec des animaux de la montagne et un espace de jeux en bois.  <br><br>Lit cabane et ambiance ludique au rendez-vous.<br><br><br><br> Prix : 80€ / nuit",
+      "images": [
+        "../Images/Chambre-SDB/lifestyle-3107041_1280.jpg",
+        "../Images/Chambre-SDB/pexels-bruno-saito-1366548-17735412.jpg",
+        "../Images/Chambre-SDB/loewe-technology-dUBXESsJvZ4-unsplash.jpg"
       ]
     },
     {
       "id": 4,
       "nom": "Refuge du Randonneur",
-      "description": "Chambre simple et authentique, idéale pour les amoureux de la montagne. Literie confortable, ambiance chalet et accès direct aux sentiers de randonnée. Prix : 90€ / nuit",
-      "image": "./assets/img/services/piscine.jpg"
+      "description": "Chambre simple et authentique, <br><br><br> idéale pour les amoureux de la montagne. Literie confortable, <br><br> ambiance chalet et accès direct aux sentiers de randonnée.<br><br><br><br> Prix : 90€ / nuit",
+      "images": [
+        "../Images/Chambre-SDB/lifestyle-3107041_1280.jpg",
+        "../Images/Chambre-SDB/pexels-bruno-saito-1366548-17735412.jpg",
+        "../Images/Chambre-SDB/loewe-technology-dUBXESsJvZ4-unsplash.jpg"
+      ]
     }
   ]
 }

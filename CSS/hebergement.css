@@ -36,12 +36,11 @@ h1{
     display: flex;
 }
 
-#image {
-    object-fit: cover;
-z-index: -100;
-  width: 60%;
-  height: 700px;
-  border-radius: 10px;
+.chambre-image {
+     object-fit: cover;
+     width: 60%;
+     height: 700px;
+     border-radius: 10px;
 }
 .p{
     width: 40%;
@@ -89,7 +88,7 @@ button.fleche-droite {
 
 .chambre-content {
   display: flex;
-  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 1;
 }
 
