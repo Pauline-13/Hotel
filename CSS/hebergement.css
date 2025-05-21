@@ -81,6 +81,48 @@ button.fleche-droite {
   right: 20px;
 }
 
+/* Animations slide gauche/droite */
+#chambre-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.chambre-content {
+  display: flex;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  opacity: 1;
+}
+
+.slide-out-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-in-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-in-right-active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.slide-out-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-in-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-in-left-active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
 
 
 /* Variables */
