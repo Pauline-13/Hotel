@@ -32,7 +32,7 @@ function afficheur(services) {
         <img class="image_service" src="${image}" alt="">
         
         <div class="container_txt">
-        <h2 class="txt_service"><strong>${nom}</strong></h2>
+        <h2><strong>${nom}</strong></h2>
         <hr>
         <p class="txt_service">${info}</p>
         <p class="txt_service">${horaire}</p>

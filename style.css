@@ -44,6 +44,7 @@ ul {
 
 /* Basic style */
 body {
+    position: relative;
     font-size: var(--font-size);
     font-family: 'Poppins', sans-serif;
     background-image: url(Images/Intérieur/Elegant\ Hotel\ Lobby\ With\ Minimalist\ Design\ And\ Art\ Piece.png);
@@ -115,9 +116,7 @@ body {
 
 /* Small devices (petits écrans) */
 @media screen and (max-width:767px) {
-    body {
-          background-image: url(Images/Accueil3.jpeg);
-    }
+ 
     .navbar_links {
         display: flex;
         flex-direction: column;
@@ -133,7 +132,7 @@ body {
         border-radius: 5px;
         overflow-wrap: break-word; 
     }
-
+    
     .show-nav .navbar_links {
         opacity: 1;
         visibility: visible;
@@ -157,12 +156,17 @@ body {
         font-size: 1.2rem;
         transition: all .4s ease-in-out;
     }
-
+    
     .navbar_link > a:hover {
         padding-right: 2rem;
         letter-spacing: 3px;
+        color: #AE9A64;
     }
 
+     /* .links_footer {
+        left: 17%
+     } */
+    
     /* Toggle menu (menu de basculement) */
     .burger {
         display: block;
@@ -199,7 +203,7 @@ body {
         border-radius: 3px;
         transition:all .5s ease-in-out;
     }
-
+    
     .bar::before {
         transform: translateY(-12px);
     }
@@ -207,11 +211,11 @@ body {
     .show-nav .bar::before {
         transform: rotate(45deg);
     }
-
+    
     .bar::after {
         transform: translateY(12px);
     }
-
+    
     .show-nav .bar::after {
         transform: rotate(-45deg);
     }
@@ -248,7 +252,120 @@ body {
         transition:width .4s;
     }
      .navbar_link:hover > a::after {
-        width: 100%;
+         width: 100%;
+     }
+
+     .links_footer {
+        left: 17%
      }
 }
 
+
+/* Footer */ 
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #F0F0F0;
+    background-color: var(--couleur-transparente);
+    font-size: 0.8rem;
+}
+
+.links_footer {
+display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 80px; /* Positionner juste au-dessus du footer */
+  left: 10%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: var(--couleur-transparente);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  width: 200px; 
+  margin-bottom: 20px;
+
+}
+
+ .show_links {
+    display: flex;
+}
+
+.links_footer a {
+  display: block;
+  color: #F0F0F0 ; /* Couleur des liens en blanc */
+  text-decoration: none;
+  padding: 8px 0;
+  font-size: 1rem;
+  transition: color 0.3s ease, padding-right 0.3s ease; /* Effet de survol */
+}
+
+.links_footer a:hover {
+  color: #AE9A64; /* Couleur de survol bleu */
+  padding-right: 10px; /* Ajouter un petit effet de décalage à droite */
+}
+
+/* Appliquer les mêmes effets de transition qu'aux liens de la navbar */
+.links_footer a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: var(--navbar-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.links_footer a:hover::after {
+  width: 100%;
+}
+
+.links_footer > a:hover {
+    padding-right: 2rem;
+    letter-spacing: 2px;
+}
+
+.footer_btn {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--couleur-transparente);
+  color: #fff;
+  padding: 10px 20px;
+  margin-left: 50px;
+  border: none;
+  cursor: pointer;
+
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+
+.txt_footer {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid green; */
+    color: #F0F0F0;
+    width: 40%;
+    height: 100%;
+}
+
+.fleche_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    width: 10%;
+    padding: 0px 5px;
+    height: 50px;
+}
+
+.fleche_footer img {
+    height: 30px; 
+    width: auto;  
+}
