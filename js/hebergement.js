@@ -1,24 +1,27 @@
 const sectionElement = document.getElementById("ici");
 let resultsIds = [];
 let index = 0;
-let lastDirection = "right"; // pour savoir quelle animation jouer
+let lastDirection = "right";
 
+const currentImageIndexes = {};
 
 fetch("../Json/hebergement.json")
-  .then((response) => response.json())
-  .then((json) => {
-    resultsIds = json.ids;
+  .then(response => response.json())
+  .then(json => {
+    resultsIds = json.ids || [];
+    
+    
     initialiserStructure();
     afficherChambre(index);
-  });
-
-
+  })
+  .catch(err => console.error("Erreur chargement JSON :", err));
 
 function initialiserStructure() {
   const containerChambre = document.createElement("div");
   containerChambre.id = "chambre-container";
   sectionElement.appendChild(containerChambre);
 
+ 
   const btnGauche = document.createElement("button");
   btnGauche.innerHTML = `<i class="fa-solid fa-arrow-left"></i>`;
   btnGauche.classList.add("fleche-gauche");
@@ -29,6 +32,7 @@ function initialiserStructure() {
   });
   sectionElement.appendChild(btnGauche);
 
+ 
   const btnDroite = document.createElement("button");
   btnDroite.innerHTML = `<i class="fa-solid fa-arrow-right"></i>`;
   btnDroite.classList.add("fleche-droite");
@@ -39,16 +43,15 @@ function initialiserStructure() {
   });
   sectionElement.appendChild(btnDroite);
 }
-let currentImageIndex = 0; // index de l'image affichée dans la chambre
-let currentChambreIndex = 0; // index de la chambre affichée
 
 function afficherChambre(i) {
-  currentChambreIndex = i;
-  currentImageIndex = 0; // reset image index à chaque nouvelle chambre
   const chambre = resultsIds[i];
   const container = document.getElementById("chambre-container");
-
   const oldContent = container.querySelector(".chambre-content");
+
+  if (!(chambre.nom in currentImageIndexes)) {
+    currentImageIndexes[chambre.nom] = 0;
+  }
 
   if (oldContent) {
     oldContent.classList.remove("slide-in-left", "slide-in-right", "slide-in-left-active", "slide-in-right-active");
@@ -63,7 +66,7 @@ function afficherChambre(i) {
         container.removeChild(oldContent);
       }
 
-      const newContent = creerContenuChambre(chambre, currentImageIndex);
+      const newContent = creerContenuChambre(chambre);
       container.appendChild(newContent);
 
       if (lastDirection === "right") {
@@ -72,6 +75,7 @@ function afficherChambre(i) {
         newContent.classList.add("slide-in-left");
       }
 
+     
       void newContent.offsetWidth;
 
       if (lastDirection === "right") {
@@ -84,36 +88,61 @@ function afficherChambre(i) {
         newContent.classList.remove("slide-in-left", "slide-in-right", "slide-in-left-active", "slide-in-right-active");
       }, 600);
 
+     
+      const img = newContent.querySelector("img.chambre-image");
+      if (img) {
+        const images = chambre.images && chambre.images.length > 0 ? chambre.images : [chambre.image];
+        if (images.length > 1) {
+          img.style.cursor = "pointer";
+          img.onclick = () => {
+            currentImageIndexes[chambre.nom] = (currentImageIndexes[chambre.nom] + 1) % images.length;
+            img.src = images[currentImageIndexes[chambre.nom]];
+          };
+        } else {
+          img.style.cursor = "default";
+          img.onclick = null;
+        }
+      }
     }, 600);
   } else {
-    const newContent = creerContenuChambre(chambre, currentImageIndex);
+    const newContent = creerContenuChambre(chambre);
     container.appendChild(newContent);
+
+  
+    const img = newContent.querySelector("img.chambre-image");
+    if (img) {
+      const images = chambre.images && chambre.images.length > 0 ? chambre.images : [chambre.image];
+      if (images.length > 1) {
+        img.style.cursor = "pointer";
+        img.onclick = () => {
+          currentImageIndexes[chambre.nom] = (currentImageIndexes[chambre.nom] + 1) % images.length;
+          img.src = images[currentImageIndexes[chambre.nom]];
+        };
+      } else {
+        img.style.cursor = "default";
+        img.onclick = null;
+      }
+    }
   }
 }
 
-function creerContenuChambre(chambre, imgIndex) {
+function creerContenuChambre(chambre) {
   const div = document.createElement("div");
   div.classList.add("chambre-content");
 
-  // Ici on prend la bonne image selon imgIndex
-  const imageSrc = chambre.images ? chambre.images[imgIndex] : chambre.image;
+  const images = chambre.images && chambre.images.length > 0 ? chambre.images : [chambre.image];
+  if (!(chambre.nom in currentImageIndexes)) {
+    currentImageIndexes[chambre.nom] = 0;
+  }
+  const imgIndex = currentImageIndexes[chambre.nom];
+  const imageSrc = images[imgIndex % images.length];
 
   div.innerHTML = `
-    <img id="image" src="${imageSrc}" alt="${chambre.nom}">
+    <img class="chambre-image" src="${imageSrc}" alt="${chambre.nom}" data-chambre="${chambre.nom}" style="cursor:${images.length > 1 ? 'pointer' : 'default'};">
     <div class="p">
       <h1><strong>${chambre.nom}</strong></h1>
       <p>${chambre.description}</p>
     </div>`;
-
-  // Ajouter le clic sur l'image pour changer la photo interne
-  const imgElement = div.querySelector("#image");
-  if(chambre.images && chambre.images.length > 1) {
-    imgElement.style.cursor = "pointer";
-    imgElement.addEventListener("click", () => {
-      currentImageIndex = (currentImageIndex + 1) % chambre.images.length;
-      imgElement.src = chambre.images[currentImageIndex];
-    });
-  }
 
   return div;
 }
