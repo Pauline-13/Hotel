@@ -4,7 +4,12 @@
       "id": 1,
       "nom": "Suite Sapin Royal",
       "description": "Chambre haut de gamme <br><br><br>  Nichée au cœur du bois, avec vue panoramique sur les montagnes, cheminée et bain nordique privatif. <br><br> Idéale pour un séjour luxueux au cœur de la nature. <br><br><br><br>Prix : 350€ / nuit",
-      "image": "../Images/Chambre-SDB/lifestyle-3107041_1280.jpg"
+      "image": [
+        "../Images/Chambre-SDB/lifestyle-3107041_1280.jpg",
+        "../Images/Chambre-SDB/pexels-bruno-saito-1366548-17735412.jpg",
+        "../Images/Chambre-SDB/loewe-technology-dUBXESsJvZ4-unsplash.jpg"
+        
+       ]
     },
     {
       "id": 2,
@@ -16,7 +21,9 @@
       "id": 3,
       "nom": "Chambre des Marmottes",
       "description": "Chambre pensée pour les enfants, décorée avec des animaux de la montagne et un espace de jeux en bois. Lit cabane et ambiance ludique au rendez-vous. Prix : 80€ / nuit",
-      "image": "../Images/istockphoto-1690616343-2048x2048.jpg"
+      "image": [
+
+      ]
     },
     {
       "id": 4,
