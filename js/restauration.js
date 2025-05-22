@@ -8,8 +8,10 @@ fetch("../Json/restaurant.json")
     resultsCartes = json.carte;
     afficheur(resultsCartes);
   });
-const sectionElement = document.getElementById("dialogue");
+let sectionElement = document.getElementById("dialogue");
 sectionElement.style.display = "none";
+
+
 function afficheur(carte) {
     
     const titre = document.createElement("h2");

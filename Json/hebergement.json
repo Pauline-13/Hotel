@@ -3,42 +3,44 @@
     {
       "id": 1,
       "nom": "Suite Sapin Royal",
-      "description": "Chambre haut de gamme <br><br><br>  Nichée au cœur du bois, avec vue panoramique sur les montagnes, cheminée et bain nordique privatif. <br><br> Idéale pour un séjour luxueux au cœur de la nature. <br><br><br><br>Prix : 350€ / nuit",
+      "description": "Chambre haut de gamme <br><br><br>  Nichée au cœur du bois, avec vue panoramique sur les montagnes, cheminée et bain nordique privatif. <br><br> Idéale pour un séjour luxueux au cœur de la nature. <br><br><br><br><span>Prix : 350€ / nuit</span>",
       "images": [
-        "../Images/Chambre-SDB/lifestyle-3107041_1280.jpg",
-        "../Images/Chambre-SDB/pexels-bruno-saito-1366548-17735412.jpg",
-        "../Images/Chambre-SDB/loewe-technology-dUBXESsJvZ4-unsplash.jpg"
+        "../Images/Chambre-SDB/FdFSFpeFvUTZgssEEZmf--1--t4qm4.jpg",
+         "../Images/Chambre-SDB/XuTB5GoZSX11DYnRr0HO--1--x6g1c.jpg",
+        "../Images/Chambre-SDB/Luxurious Forest Room With Majestic Bed And Cozy Fireplace.png",
+        "../Images/Chambre-SDB/Chambre Luxueuse Dans Une Forêt Paisible Avec Vue Montagne.png",
+        "../Images/Chambre-SDB/Chambre Luxueuse Avec Vue Montagnarde Environnement Serein.png"
       ]
     },
     {
       "id": 2,
       "nom": "Chambre Cascade",
-      "description": "Chaleureuse chambre de moyenne gamme <br><br><br> inspirée par les torrents alpins, avec matériaux naturels, terrasse et calme absolu.  <br><br> Parfaite pour un week-end ressourçant.<br><br><br><br> Prix : 150€ / nuit",
+      "description": "Chaleureuse chambre luxueuse <br><br><br> Inspirée par les torrents alpins, avec matériaux naturels, terrasse et calme absolu.  <br><br> Parfaite pour un week-end ressourçant.<br><br><br><br> <span>Prix : 150€ / nuit</span>",
       "images": [
-        "../Images/Piscine-Pexels.jpg"
-        "../Images/Chambre-SDB/lifestyle-3107041_1280.jpg",
-        "../Images/Chambre-SDB/pexels-bruno-saito-1366548-17735412.jpg",
-        "../Images/Chambre-SDB/loewe-technology-dUBXESsJvZ4-unsplash.jpg"
+        "../Images/Chambre-SDB/yiJWHLpEwFBrNbcy9k7T--1--c398f.jpg",
+        "../Images/Chambre-SDB/pexels-quang-nguyen-vinh-222549-2134224.jpg",
+        "../Images/Chambre-SDB/eSj74AwkEtc07V0ZZizW--1--tjd3b.jpg",
+        "../Images/Chambre-SDB/Chambre Marmotte Avec Vue Panoramique Sur Montagnes magnifiques.png"
       ]
     },
     {
       "id": 3,
       "nom": "Chambre des Marmottes",
-      "description": "Chambre pensée pour les enfants, <br><br><br> décorée avec des animaux de la montagne et un espace de jeux en bois.  <br><br>Lit cabane et ambiance ludique au rendez-vous.<br><br><br><br> Prix : 80€ / nuit",
+      "description": "Chambre pensée pour les enfants, <br><br><br> Décorée avec des animaux de la montagne et un espace de jeux en bois.  <br><br>Lit cabane et ambiance ludique au rendez-vous.<br><br><br><br><span>Prix : 80€ / nuit</span>",
       "images": [
-        "../Images/Chambre-SDB/lifestyle-3107041_1280.jpg",
-        "../Images/Chambre-SDB/pexels-bruno-saito-1366548-17735412.jpg",
-        "../Images/Chambre-SDB/loewe-technology-dUBXESsJvZ4-unsplash.jpg"
+        "../Images/Chambre-SDB/naSuY2QmOo0fqupI7OT3--1--3upz9.jpg",
+        "../Images/Chambre-SDB/2VCeKbB6V6mTYhKAGKje--1--3dllg.jpg",
+        "../Images/Chambre-SDB/pexels-rana-matloob-hussain-733235258-26886815.jpg"
       ]
     },
     {
       "id": 4,
       "nom": "Refuge du Randonneur",
-      "description": "Chambre simple et authentique, <br><br><br> idéale pour les amoureux de la montagne. Literie confortable, <br><br> ambiance chalet et accès direct aux sentiers de randonnée.<br><br><br><br> Prix : 90€ / nuit",
+      "description": "Chambre simple et authentique, <br><br><br> Idéale pour les amoureux de la montagne. Literie confortable, <br><br> ambiance chalet et accès direct aux sentiers de randonnée.<br><br><br><br> <span>Prix : 90€ / nuit</span>",
       "images": [
-        "../Images/Chambre-SDB/lifestyle-3107041_1280.jpg",
-        "../Images/Chambre-SDB/pexels-bruno-saito-1366548-17735412.jpg",
-        "../Images/Chambre-SDB/loewe-technology-dUBXESsJvZ4-unsplash.jpg"
+        "../Images/Chambre-SDB/mE58OHJClCRnmwYyyPNz--0--kbctv.jpg",
+        "../Images/Chambre-SDB/loewe-technology-dUBXESsJvZ4-unsplash.jpg",
+        "../Images/Chambre-SDB/nU49rFlG9fB4HlN0TCpE--0--wsb34.jpg"
       ]
     }
   ]

@@ -59,6 +59,16 @@ h1{
     margin-top: 75px;
     
 }
+span{
+    background-color: #AE9A64;
+    color: #2E374C;
+    border-radius: 20px;
+    padding: 10px;
+}
+span:hover{
+    transform: translateY(-5px);
+    color: white;
+}
 
 .fleche-gauche , .fleche-droite {
   position: absolute;
@@ -80,7 +90,7 @@ button.fleche-droite {
   right: 20px;
 }
 
-/* Animations slide gauche/droite */
+
 #chambre-container {
   position: relative;
   overflow: hidden;
