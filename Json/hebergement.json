@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nom": "Suite Sapin Royal",
-      "description": "Chambre haut de gamme <br><br><br>  Nichée au cœur du bois, avec vue panoramique sur les montagnes, cheminée et bain nordique privatif. <br><br> Idéale pour un séjour luxueux au cœur de la nature. <br><br><br><br><span>Prix : 350€ / nuit</span>",
+      "description": " Niché au cœur des montagnes, l’Hôtel des Cimes vous offre un refuge d’exception entre ciel et sommets. <br><br><br> Chaque suite, baignée de lumière naturelle, ouvre sur une vue panoramique à couper le souffle. <br><br><br> Le design allie élégance contemporaine et matériaux nobles, pour une atmosphère chaleureuse et raffinée. Depuis votre terrasse privée, contemplez les paysages alpins qui changent au gré des saisons.  <br><br><br> À L’Hôtel des Cimes, le luxe se vit au sommet. <br><br><br><span class=\"prix\">400 € la nuitée </span>",
       "images": [
         "../Images/Chambre-SDB/FdFSFpeFvUTZgssEEZmf--1--t4qm4.jpg",
          "../Images/Chambre-SDB/XuTB5GoZSX11DYnRr0HO--1--x6g1c.jpg",
@@ -15,18 +15,18 @@
     {
       "id": 2,
       "nom": "Chambre Cascade",
-      "description": "Chaleureuse chambre luxueuse <br><br><br> Inspirée par les torrents alpins, avec matériaux naturels, terrasse et calme absolu.  <br><br> Parfaite pour un week-end ressourçant.<br><br><br><br> <span>Prix : 150€ / nuit</span>",
+      "description": "Niché au cœur des montagnes, l’Hôtel des Cimes vous offre un refuge d’exception entre ciel et sommets. <br><br><br> Chaleureuse chambre confortable, inspirée par les paysages montagneux. Décorée avec des matériaux simples mais raffinés, elle offre un espace accueillant pour se détendre. La terrasse privative vous laissera profiter du calme absolu des environs. <br><br><br> Idéale pour un séjour relaxant, cette chambre vous invite à vous ressourcer au cœur des montagnes. Parfaite pour un week-end de tranquillité.<br><br><br> <span class=\"prix\">300 € la nuitée </span>",
       "images": [
         "../Images/Chambre-SDB/yiJWHLpEwFBrNbcy9k7T--1--c398f.jpg",
         "../Images/Chambre-SDB/pexels-quang-nguyen-vinh-222549-2134224.jpg",
         "../Images/Chambre-SDB/eSj74AwkEtc07V0ZZizW--1--tjd3b.jpg",
         "../Images/Chambre-SDB/Chambre Marmotte Avec Vue Panoramique Sur Montagnes magnifiques.png"
-      ]
+      ] 
     },
     {
       "id": 3,
       "nom": "Chambre des Marmottes",
-      "description": "Chambre pensée pour les enfants, <br><br><br> Décorée avec des animaux de la montagne et un espace de jeux en bois.  <br><br>Lit cabane et ambiance ludique au rendez-vous.<br><br><br><br><span>Prix : 80€ / nuit</span>",
+      "description": "Chambre conçue spécialement pour les enfants, avec une décoration joyeuse inspirée des animaux des montagnes. <br><br><br> Un espace de jeux en bois a été aménagé pour stimuler leur créativité et leur imagination. Le lit cabane ajoute une touche magique, tandis que l'ambiance ludique invite à l'aventure. <br><br><br>Idéale pour des moments de joie et de découvertes, cette chambre promet de ravir les petits. Un véritable cocon montagnard pour s'amuser et rêver.<br><br><br><span class=\"prix\">100 € la nuitée</span>",
       "images": [
         "../Images/Chambre-SDB/naSuY2QmOo0fqupI7OT3--1--3upz9.jpg",
         "../Images/Chambre-SDB/2VCeKbB6V6mTYhKAGKje--1--3dllg.jpg",
@@ -36,7 +36,7 @@
     {
       "id": 4,
       "nom": "Refuge du Randonneur",
-      "description": "Chambre simple et authentique, <br><br><br> Idéale pour les amoureux de la montagne. Literie confortable, <br><br> ambiance chalet et accès direct aux sentiers de randonnée.<br><br><br><br> <span>Prix : 90€ / nuit</span>",
+      "description": "Chambre simple et chaleureuse, idéale pour les amoureux de la montagne. <br><br><br> La literie confortable assure des nuits paisibles après une journée d’aventure. L’ambiance chalet apporte une touche d’authenticité, tout en offrant un cadre naturel apaisant. Avec un accès direct aux sentiers de randonnée, cette chambre est le point de départ parfait pour explorer les paysages environnants. <br><br><br> Un véritable havre de paix pour les passionnés de nature.<br><br><br> <span class=\"prix\">150 € la nuitée</span>",
       "images": [
         "../Images/Chambre-SDB/mE58OHJClCRnmwYyyPNz--0--kbctv.jpg",
         "../Images/Chambre-SDB/loewe-technology-dUBXESsJvZ4-unsplash.jpg",
