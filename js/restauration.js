@@ -93,11 +93,15 @@ function afficheur(carte) {
 
 
 function ici() {
-if (sectionElement.style.display == "none"){
-  sectionElement.style.display = "block";
-  
-}else {
-  sectionElement.style.display = "none";
-}
-
+sectionElement.style.display = "block";
+afficheur(carte)
 };
+
+  // Sources Footer
+const bouton = document.querySelector('.footer_btn');
+const links = document.querySelector('.links_footer');
+bouton.addEventListener('click', footerMenu);
+
+function footerMenu() {
+  links.classList.toggle('show_links');
+}

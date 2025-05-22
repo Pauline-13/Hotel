@@ -280,38 +280,37 @@ footer {
 display: none;
   flex-direction: column;
   position: absolute;
-  bottom: 80px; /* Positionner juste au-dessus du footer */
+  bottom: 80px; 
   left: 10%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.8); 
   background-color: var(--couleur-transparente);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
   width: 200px; 
   margin-bottom: 20px;
-
 }
 
- .show_links {
+.show_links {
     display: flex;
 }
 
 .links_footer a {
   display: block;
-  color: #F0F0F0 ; /* Couleur des liens en blanc */
+  color: #F0F0F0 ; 
+  font-weight: 800;
   text-decoration: none;
   padding: 8px 0;
   font-size: 1rem;
-  transition: color 0.3s ease, padding-right 0.3s ease; /* Effet de survol */
+  transition: color 0.3s ease, padding-right 0.3s ease; 
 }
 
 .links_footer a:hover {
-  color: #AE9A64; /* Couleur de survol bleu */
-  padding-right: 10px; /* Ajouter un petit effet de décalage à droite */
+  color: #AE9A64; 
+  padding-right: 10px; 
 }
 
-/* Appliquer les mêmes effets de transition qu'aux liens de la navbar */
 .links_footer a::after {
   content: "";
   display: block;
