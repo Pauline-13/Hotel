@@ -1,4 +1,3 @@
-const btn = document.getElementById('btn');
 
 fetch("../Json/restaurant.json")
 .then((response) => response.json())
@@ -6,14 +5,12 @@ fetch("../Json/restaurant.json")
   .then((json) => {
     console.log(json);
     resultsCartes = json.carte;
-    afficheur(resultsCartes);
   });
 let sectionElement = document.getElementById("dialogue");
-sectionElement.style.display = "none";
 
 
 function afficheur(carte) {
-    
+    sectionElement.innerHTML=``;
     const titre = document.createElement("h2");
     
     titre.innerHTML=`ENTREES :`;
@@ -91,17 +88,34 @@ function afficheur(carte) {
     
 };
 
+const dialogue = document.getElementById("dialogue");
 
-function ici() {
-sectionElement.style.display = "block";
-afficheur(carte)
-};
-
-  // Sources Footer
-const bouton = document.querySelector('.footer_btn');
-const links = document.querySelector('.links_footer');
-bouton.addEventListener('click', footerMenu);
-
-function footerMenu() {
-  links.classList.toggle('show_links');
+// Ouvre le dialogue
+function ouvrirDialogue() {
+  if (!dialogue.open) {
+    dialogue.showModal();
+  }
 }
+
+// Ferme le dialogue
+function fermerDialogue() {
+  dialogue.close();
+  // Tu peux vider le contenu ici si besoin :
+  // dialogue.innerHTML = '<button onclick="fermerDialogue()">X</button>';
+}
+
+// Ferme le dialogue quand on clique à l'extérieur
+dialogue.addEventListener("click", function (event) {
+  const rect = dialogue.getBoundingClientRect();
+  const clickedInDialog =
+    event.clientX >= rect.left &&
+    event.clientX <= rect.right &&
+    event.clientY >= rect.top &&
+    event.clientY <= rect.bottom;
+
+  if (!clickedInDialog) {
+    fermerDialogue();
+  }
+});
+
+
