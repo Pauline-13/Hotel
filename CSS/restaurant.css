@@ -73,6 +73,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     width: 70%;
     left: 28%;
 }
@@ -93,18 +94,22 @@ video {
 .text_resto_one, .text_resto_two {
     color: #AE9A64;
     padding: 10px 30px;
-    text-align: justify;
+    text-align: center;
     margin-top: 20px;
 }
 
 .container_resto {
     width: 100%;
     display: flex;
+   
 }
 
 .container_resto .text_resto_two {
     width: 75%;
     padding: 0 20px;
+     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .container_resto img {
@@ -116,11 +121,14 @@ video {
 #carte {
     position: relative;
     padding: 10px;
-    right: -20%;
-    bottom: 10%;
+   
+}
+#btn {
+    text-align: center;
+    padding: 20px;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     align-items: center;
