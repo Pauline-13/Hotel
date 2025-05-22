@@ -9,17 +9,13 @@ function toggleMenu () {
 toggleMenu();
 
 
+
+
 // Fleche footer
   document.querySelector('.fleche_footer').addEventListener('click', function(e) {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-
-
-
-
-
-
 
 
 
@@ -33,4 +29,8 @@ bouton.addEventListener('click', footerMenu);
 function footerMenu() {
   links.classList.toggle('show_links');
 }
+
+
+
+
 

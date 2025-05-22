@@ -8,7 +8,7 @@
 /* Variables */
 :root {
     --font-size:1rem; 
-    --couleur-transparente: rgba(0, 0, 0, 0.158)
+    --couleur-transparente: rgba(0, 0, 0, 0.4)
 }
 
 .light-mode {
@@ -75,7 +75,6 @@ section {
 }
 
 h1 {
-    color: #f0f0f0;
     color: #AE9A64;
     font-family: "Spectral SC", serif;
     font-weight: 300;
@@ -87,7 +86,8 @@ h1 {
 .image_service {
     width: 45%;
     height: 320px;
-    padding-left: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
 }
 
 .image_service:hover {
@@ -148,6 +148,7 @@ body {
 .navbar_logo img {
     height: 100%;
 }
+
 .navbar_links {
     display: flex;
 }
@@ -166,149 +167,7 @@ body {
 }
 
 
-
-/* Small devices (petits écrans) */
-@media screen and (max-width:767px) {
-    body {
-          background-image: url(Images/Accueil3.jpeg);
-    }
-    
-    .navbar_links {
-        display: flex;
-        flex-direction: column;
-        width: 30%; /* Prendre toute la largeur */
-        height: auto; /* Ajuster la hauteur automatiquement */
-        position: absolute;
-        top: 90px; /* Placer la liste sous la navbar */
-        left:10; /* Positionner à gauche */
-        background: var(--navbar-bg-color);
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
-        border-radius: 5px;
-        overflow-wrap: break-word; 
-    }
-
-    .show-nav .navbar_links {
-        opacity: 1;
-        visibility: visible;
-        transition: opacity 0.5s ease-in-out;
-    }
-
-    .navbar_link {
-        opacity: 0;
-        transform: translateX(-50px); /* Les éléments arrivent par le bas */
-        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    }
-
-    .show-nav .navbar_link {
-        opacity: 1;
-        transform: translateY(0); /* Animation des liens */
-    }
-
-    .navbar_link > a {
-        display: block;
-        padding: 1rem;
-        font-size: 1.2rem;
-        transition: all .4s ease-in-out;
-    }
-
-    .navbar_link > a:hover {
-        padding-right: 2rem;
-        letter-spacing: 3px;
-    }
-
-    /* Toggle menu (menu de basculement) */
-    .burger {
-        display: block;
-        position: relative;
-        padding-left: 10px;
-        width: 45px;
-        height: 45px;
-        border: none;
-        background: transparent;
-        cursor: pointer;
-    }
-    .bar {
-        display: block;
-        width: 25px;
-        height: 2px;
-        background: var(--navbar-color);
-        border-radius: 3px;
-        transition: all .5s ease-in-out;
-    }
-
-    .show-nav .bar {
-        width: 0;
-        background: transparent;
-    }
-    .bar::before, .bar::after {
-        content: "";
-        display: block;
-        width: 25px;
-        height: 2px;
-        padding-left: 0px;
-        position: absolute;
-        left: 10;
-        background: var(--navbar-color);
-        border-radius: 3px;
-        transition:all .5s ease-in-out;
-    }
-
-    .bar::before {
-        transform: translateY(-12px);
-    }
-
-    .show-nav .bar::before {
-        transform: rotate(45deg);
-    }
-
-    .bar::after {
-        transform: translateY(12px);
-    }
-
-    .show-nav .bar::after {
-        transform: rotate(-45deg);
-    }
-}
-
-/* Animations */
-.show-nav .first {
-    transition: all 0.5s ease-out;
-}
-.show-nav .second {
-    transition: all 0.6s ease-out;
-}
-.show-nav .third {
-    transition: all 0.7s ease-out;
-}
-.show-nav .four {
-    transition: all 0.8s ease-out;
-}
-.show-nav .fifth {
-    transition: all 0.9s ease-out;
-}
-
-
-
-
-/* médium devices (écrans moyens) */
-@media screen and (min-width:768px) {
-    .navbar_link > a::after {
-        display: block;
-        content: "";
-        width:0;
-        height: 1px;
-        background: var(--navbar-color);
-        transition:width .4s;
-    }
-     .navbar_link:hover > a::after {
-        width: 100%;
-     }
-}
-
-
-/* Footer — modifié */
+/* Footer */
 footer {
     position: relative;   /* Assurez-vous que la position soit relative ou fixed */
     height: 80px;         /* Hauteur fixe de 80px */
@@ -400,11 +259,203 @@ footer {
     width: 10%;
     padding: 0px 5px;
     height: 50px;
+    margin-right: 20px;
 }
 
 .fleche_footer img {
     height: 30px; 
     width: auto;  
 }
+
+
+
+/* Small devices (petits écrans) */
+@media screen and (max-width:767px) {
+
+    
+    .navbar_links {
+        display: flex;
+        flex-direction: column;
+        width: 50%; /* Prendre toute la largeur */
+        height: auto; /* Ajuster la hauteur automatiquement */
+        position: absolute;
+        top: 90px; /* Placer la liste sous la navbar */
+        left:10; /* Positionner à gauche */
+        background: var(--navbar-bg-color);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+        border-radius: 5px;
+        overflow-wrap: break-word; 
+    }
+
+    .show-nav .navbar_links {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .navbar_link {
+        opacity: 0;
+        transform: translateX(-50px); /* Les éléments arrivent par le bas */
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .show-nav .navbar_link {
+        opacity: 1;
+        transform: translateY(0); /* Animation des liens */
+    }
+
+    .navbar_link > a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.2rem;
+        transition: all .4s ease-in-out;
+    }
+
+    .navbar_link > a:hover {
+        padding-right: 2rem;
+        letter-spacing: 3px;
+    }
+
+    /* Toggle menu (menu de basculement) */
+    .burger {
+        display: block;
+        position: relative;
+        padding-left: 10px;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: var(--navbar-color);
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+    }
+
+    .show-nav .bar {
+        width: 0;
+        background: transparent;
+    }
+
+    .bar::before, .bar::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 2px;
+        padding-left: 0px;
+        position: absolute;
+        left: 10;
+        background: var(--navbar-color);
+        border-radius: 3px;
+        transition:all .5s ease-in-out;
+    }
+
+    .bar::before {
+        transform: translateY(-12px);
+    }
+
+    .show-nav .bar::before {
+        transform: rotate(45deg);
+    }
+
+    .bar::after {
+        transform: translateY(12px);
+    }
+
+    .show-nav .bar::after {
+        transform: rotate(-45deg);
+    }
+
+    /*main*/
+    section {
+        width: 100%;
+    }
+
+    .img_aside {
+    width: 150px;
+    height: 100%;
+    opacity: 0.4;
+    }
+
+    .image_service {
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    }
+
+    .container_section {
+    flex-direction: column-reverse;
+    margin: 80px 0;
+    }
+
+    h2 {
+        color: #F0F0F0;
+    }
+
+    .container_txt {
+    width: 100%;
+    }
+
+    .container_txt p {
+    font-weight: 800;
+    }
+
+
+      /*footer*/
+    .footer_btn {
+     margin-left: 10px;
+    }
+
+    .links_footer {
+     left: 37%
+     }
+
+     .txt_footer {
+    font-size: 0.7rem;
+    }
+}
+
+/* Animations */
+.show-nav .first {
+    transition: all 0.5s ease-out;
+}
+.show-nav .second {
+    transition: all 0.6s ease-out;
+}
+.show-nav .third {
+    transition: all 0.7s ease-out;
+}
+.show-nav .four {
+    transition: all 0.8s ease-out;
+}
+.show-nav .fifth {
+    transition: all 0.9s ease-out;
+}
+
+
+
+
+/* médium devices (écrans moyens) */
+@media screen and (min-width:768px) {
+    .navbar_link > a::after {
+        display: block;
+        content: "";
+        width:0;
+        height: 1px;
+        background: var(--navbar-color);
+        transition:width .4s;
+    }
+     .navbar_link:hover > a::after {
+        width: 100%;
+     }
+}
+
+
 
 

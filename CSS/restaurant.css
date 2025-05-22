@@ -160,14 +160,11 @@ video {
 
 /* Responsive - petit écran */
 @media screen and (max-width:767px) {
-    body {
-        background-image: url(Images/Accueil3.jpeg);
-    }
 
     .navbar_links {
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 50%;
         position: absolute;
         top: 90px;
         left: 10;
@@ -238,6 +235,19 @@ video {
     .show-nav .bar { width: 0; background: transparent; }
     .show-nav .bar::before { transform: rotate(45deg); }
     .show-nav .bar::after { transform: rotate(-45deg); }
+
+    /*footer*/
+    .footer_btn {
+    margin-left: 10px;
+    }
+
+    .links_footer {
+        left: 37%
+     }
+
+     .txt_footer {
+    font-size: 0.7rem;
+}
 }
 
 /* Navbar hover effet */
@@ -270,7 +280,7 @@ video {
     font-size: 15px;
 }
 
-/* Footer — modifié */
+/* Footer */
 footer {
     position: relative;   /* Assurez-vous que la position soit relative ou fixed */
     height: 80px;         /* Hauteur fixe de 80px */
