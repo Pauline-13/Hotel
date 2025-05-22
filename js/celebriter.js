@@ -21,7 +21,7 @@ function afficheur(celebs) {
 
 fetch("https://api.api-ninjas.com/v1/celebrity?name=elon", {
     method: "GET",
-    headers: {
+    headers: {  
         'X-Api-Key': 'ONqjzSTwf0RkB9S7y7O3rQ==xBq58h0ypybseNvn'
     }
 })
