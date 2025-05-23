@@ -276,7 +276,7 @@ footer {
     .navbar_links {
         display: flex;
         flex-direction: column;
-        width: 50%; /* Prendre toute la largeur */
+        max-width: 48%;
         height: auto; /* Ajuster la hauteur automatiquement */
         position: absolute;
         top: 90px; /* Placer la liste sous la navbar */
@@ -373,6 +373,12 @@ footer {
     }
 
     /*main*/
+
+    h1 {
+        font-size: 3rem;
+        padding: 30px 40px 0 40px;
+    }
+
     section {
         width: 100%;
     }
@@ -384,9 +390,12 @@ footer {
     }
 
     .image_service {
-    width: 90%;
+    width: 70%;
     height: 200px;
     object-fit: cover;
+    margin: 20px auto;
+    margin-top: 0;
+    margin-bottom: 0;
     }
 
     .container_section {
@@ -396,6 +405,8 @@ footer {
 
     h2 {
         color: #F0F0F0;
+        font-weight: 300;
+        font-size: 2rem;
     }
 
     .container_txt {
@@ -404,6 +415,11 @@ footer {
 
     .container_txt p {
     font-weight: 800;
+    }
+
+    .txt_service {
+        font-size: 0.8rem;
+        font-weight: 300;
     }
 
 
