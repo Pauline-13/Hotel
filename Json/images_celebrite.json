@@ -1,12 +1,43 @@
 {
-  "alain delon": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=150&q=80",
-  "elon gold": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=150&q=80",
-  "scott delong": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=150&q=80",
-  "candice delong": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=150&q=80",
-  "christopher meloni": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=150&q=80",
-  "elon musk": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80",
-  "armando montelongo": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=150&q=80",
-  "delonte west": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=150&q=80",
-  "tom delonge": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=150&q=80",
-  "anthony delon": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=150&q=80"
+  "alain delon": {
+    "image": "../Images/Célébrités/AlainDeLoin.jpeg",
+    "avis": "Un écrin de raffinement au cœur de la montagne. L’Hôtel des Cimes incarne le luxe discret que j’affectionne tant. Service irréprochable, suite somptueuse, et une vue à couper le souffle."
+  },
+  "elon gold": {
+    "image": "../Images/Célébrités/ElonGold.webp",
+    "avis": "J’ai l’habitude des scènes et des projecteurs, mais cet endroit m’a laissé sans voix. Calme, élégant, et parfaitement orchestré, comme une bonne punchline."
+  },
+  "scott delong": {
+    "image": "../Images/Célébrités/ScottDelong.webp",
+    "avis": "En tant qu’entrepreneur, je suis toujours en mouvement. Mais ici, j’ai trouvé un rare moment de paix. Un vrai sanctuaire en altitude."
+  },
+  "candice delong": {
+    "image": "../Images/Célébrités/CandiceDelong.jpg",
+    "avis": "La sécurité est impeccable, et l’ambiance feutrée me permet enfin de décrocher. L’endroit parfait pour se ressourcer sans se faire remarquer."
+  },
+  "christopher meloni": {
+    "image": "../Images/Célébrités/ChristopherMeloni.avif",
+    "avis": "Chaque détail semble avoir été pensé pour le confort. Une retraite alpine qui conjugue luxe et caractère. À recommander sans hésitation."
+  },
+  "elon musk": {
+    "image": "../Images/Célébrités/ElonMusk.jpg",
+    "avis": "Un lieu inspirant, technologiquement au point, et incroyablement reposant. J’y ai rechargé mes batteries – littéralement et mentalement."
+  },
+  "armando montelongo": {
+    "image": "../Images/Célébrités/ArmandoMontelongo.jpg",
+    "avis": "Si l’immobilier avait une version 7 étoiles, ce serait cet hôtel. Design somptueux, emplacement parfait, et une ambiance exclusive."
+  },
+  "delonte west": {
+    "image": "../Images/Célébrités/DelonteWest.png",
+    "avis": "J’ai connu des hauts et des bas, mais ce séjour m’a recentré. La montagne, l’air pur, et le confort ultime. Un break salutaire."
+  },
+  "tom delonge": {
+    "image": "../Images/Célébrités/TomDelonge.jpg",
+    "avis": "J’ai l’habitude de regarder vers les étoiles, mais ici, je me suis contenté d’admirer la vue depuis le jacuzzi. Expérience cosmique !"
+  },
+  "anthony delon": {
+    "image": "../Images/Célébrités/AnthonyDelon.jpg",
+    "avis": "J’ai grandi dans le raffinement, mais cet hôtel m’a surpris. Élégance naturelle, cuisine divine, et un personnel aux petits soins."
+  }
 }
+

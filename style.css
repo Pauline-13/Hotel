@@ -77,10 +77,7 @@ body > * {
 }
 
 .main_title {
-    /* border: 2px solid green; */
-    color: #FFFFFF;
-    /* color: rgba(66, 46, 8, 0.521); */
-    /* background-color: var(--couleur-transparente); */
+    color: #F8F3E6;
     font-family: "Spectral SC", serif;
     font-size: 5rem;
     font-weight: lighter;
@@ -252,7 +249,7 @@ body {
     .navbar_links {
         display: flex;
         flex-direction: column;
-         width: 50%; /* Prendre toute la largeur */
+        max-width: 48%; 
         height: auto; /* Ajuster la hauteur automatiquement */
         position: absolute;
         top: 90px; /* Placer la liste sous la navbar */
@@ -347,6 +344,15 @@ body {
     
     .show-nav .bar::after {
         transform: rotate(-45deg);
+    }
+
+    /*body*/
+    .main_title {
+    font-size: 4rem;
+    padding: 10px;
+    border-radius: 5px;
+        margin-top: 150px;
+        text-align: center;
     }
 
     /*footer*/
