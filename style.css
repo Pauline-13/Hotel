@@ -352,23 +352,23 @@ body {
     font-size: 4rem;
     padding: 10px;
     border-radius: 5px;
-        margin-top: 150px;
-        text-align: center;
+    margin-top: 150px;
+    text-align: center;
     }
 
     /*footer*/
     .footer_btn {
-  margin-left: 10px;
+    margin-left: 10px;
     }
 
  .links_footer {
-        left: 37%
+    left: 37%
      }
 
      .txt_footer {
     font-size: 0.7rem;
-}
-}
+    }
+    }
 
 /* Animations */
 .show-nav .first {
