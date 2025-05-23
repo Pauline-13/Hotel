@@ -41,7 +41,6 @@ ul {
 }
 
 
-
 /* Basic style */
 body {
     position: relative;
@@ -91,6 +90,7 @@ body > * {
 
 /* Navbar */
 .navbar {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -253,13 +253,14 @@ body {
         height: auto; /* Ajuster la hauteur automatiquement */
         position: absolute;
         top: 90px; /* Placer la liste sous la navbar */
-        left:10; /* Positionner à gauche */
+        left:10px; /* Positionner à gauche */
         background: var(--navbar-bg-color);
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
         border-radius: 5px;
         overflow-wrap: break-word; 
+        z-index: 9999; 
     }
     
     .show-nav .navbar_links {
