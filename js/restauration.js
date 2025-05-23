@@ -5,17 +5,18 @@ fetch("../Json/restaurant.json")
   .then((json) => {
     console.log(json);
     resultsCartes = json.carte;
+    afficheur(resultsCartes);
   });
-let sectionElement = document.getElementById("dialogue");
+let sectionElement = document.getElementById("dialogue_carte");
 
 
 function afficheur(carte) {
-    sectionElement.innerHTML=``;
+    sectionElement.innerHTML="";
     const titre = document.createElement("h2");
     
-    titre.innerHTML=`ENTREES :`;
+    titre.innerHTML=`ENTRÉES :`;
     sectionElement.appendChild(titre);
-      carte.entrees.forEach((entree) => {
+    carte.entrees.forEach((entree) => {
     const divElement = document.createElement("div");
     divElement.classList.add("entrer");
     
@@ -23,8 +24,8 @@ function afficheur(carte) {
       <img src="${entree.image}" alt="" />
     <div class="bien">
       <p><strong>${entree.nom}</strong></p>
-    
-      <p>${entree.description}</p>  <br><br>
+    <br><br>
+      <p>${entree.description}</p>  <br>
       <p>${entree.prix} €</p>
     </div>
     `;
@@ -40,8 +41,8 @@ function afficheur(carte) {
     divElement.innerHTML= `
       <img src="${plat.image}" alt="" />
      <div class="bien"> 
-       <p><strong>${plat.nom}</strong></p>
-       <p>${plat.description}</p>
+       <p><strong>${plat.nom}</strong></p><br><br>
+       <p>${plat.description}</p><br>
        <p>${plat.prix} €</p>
       </div>
     `;
@@ -55,14 +56,14 @@ function afficheur(carte) {
     const divElement = document.createElement("div");
     divElement.classList.add("dessert");
     divElement.innerHTML= `
-    <div>
-      <div class="bien">
-       <img src="${dessert.image}" alt="" />
-       <p><strong>${dessert.nom}</strong></p>
-       <p>${dessert.description}</p>
+    
+    <img src="${dessert.image}" alt="" />
+    <div class="bien">
+       <p><strong>${dessert.nom}</strong></p><br><br>
+       <p>${dessert.description}</p><br>
        <p>${dessert.prix} €</p>
-      </div>
     </div>
+    
     `;
     sectionElement.appendChild(divElement);
   });
@@ -73,10 +74,10 @@ function afficheur(carte) {
     const divElement = document.createElement("div");
     divElement.classList.add("boisson");
     divElement.innerHTML= `
+    <img src="${boisson.image}" alt="" />
     <div class="bien"> 
-      <img src="${boisson.image}" alt="" />
-      <p><strong>${boisson.nom}</strong></p>
-      <p>${boisson.description}</p>
+      <p><strong>${boisson.nom}</strong></p><br><br>
+      <p>${boisson.description}</p><br>
       <p>${boisson.prix} €</p>
     </div>
     `;
@@ -94,15 +95,17 @@ const dialogue = document.getElementById("dialogue");
 function ouvrirDialogue() {
   if (!dialogue.open) {
     dialogue.showModal();
+   
+  } 
+  if (resultsCartes) {
+    afficheur(resultsCartes);
   }
-}
+};
 
 // Ferme le dialogue
 function fermerDialogue() {
   dialogue.close();
-  // Tu peux vider le contenu ici si besoin :
-  // dialogue.innerHTML = '<button onclick="fermerDialogue()">X</button>';
-}
+ };
 
 // Ferme le dialogue quand on clique à l'extérieur
 dialogue.addEventListener("click", function (event) {
@@ -118,7 +121,6 @@ dialogue.addEventListener("click", function (event) {
   }
 });
 
-<<<<<<< Pauline
 
 
 
@@ -147,6 +149,4 @@ toggleMenu();
 const bouton = document.querySelector('.footer_btn');
 const links = document.querySelector('.links_footer');
 bouton.addEventListener('click', footerMenu);
-=======
->>>>>>> main
 
