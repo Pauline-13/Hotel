@@ -27,7 +27,7 @@
 
 <main>
     <aside>
-        <video> <!--Ajouter autoplay muted loop pour qu'elle joue continuellement -->
+        <video autoplay muted loop>
         <source src="../Images/3297798-uhd_4096_2160_25fps.mp4" type="video/webm" />
 
         <source src="../Images/1675449-hd_1920_1080_30fps.mp4" type="video/mp4" />
@@ -53,7 +53,10 @@ Venez partager un moment unique, entre authenticité et sérénité.</p>
         <br><br>
         <div class="container_resto">
           
-  <button id="openBtn" onclick="ouvrirDialogue() ">VOIR NOTRE CARTE</button>
+  <button id="openBtn" onclick="ouvrirDialogue()">
+  <span class="background"></span>
+  <span class="text">VOIR NOTRE CARTE</span>
+</button>
         <p class="text_resto_two"> 
         Horaires du restaurant  <br><br><br>    
         Lundi à Dimanche<br><br>
@@ -62,7 +65,7 @@ Venez partager un moment unique, entre authenticité et sérénité.</p>
         Dîner : 19h00 – 22h00<br><br>
         Service en chambre : 7h00 – 22h30<br><br>
         </p>
-        <img  src="../Images/Restaurant/pexels-roman-odintsov-7539892.jpg" alt="">
+        <img class="img_resto_exterieur" src="../Images/Restaurant/pexels-roman-odintsov-7539892.jpg" alt="">
         </div>
 
 <dialog id="dialogue">

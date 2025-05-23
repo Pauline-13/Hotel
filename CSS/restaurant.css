@@ -121,6 +121,11 @@ video {
     object-fit: contain;
 }
 
+.img_resto_exterieur {
+    border: 1px solid #F0F0F0;
+    height: 335px;
+    }
+
 
 dialog {
   margin-left: 20%;
@@ -158,23 +163,46 @@ dialog img {
     text-align: center;
     gap: 10px;
 }
-#openBtn {
-    font-size: 24px;
-    color: white; 
 
-    text-align: center;
-    padding: 50px;
-    background-image: url(../Images/Restaurant/jpg.jpg);
-    background-size: 100% 100% ;
-    background-repeat: no-repeat;
-    filter: blur(3px);
-    object-fit: cover;
-    
-    
+#openBtn {
+  position: relative;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  height: 335px;
+  padding: 50px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background: none;
+  display: inline-block;
+  border: 1px solid #F0F0F0;
+  font-family: "Spectral SC", serif;
 }
-#openBtn:hover{
-    filter: blur(0px);
-    
+
+#openBtn .background {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url(../Images/Restaurant/jpg.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+#openBtn .text {
+  position: relative;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+#openBtn:hover .background {
+  filter: blur(0);
+}
+
+#openBtn:hover .text {
+  opacity: 0;
 }
 
 
@@ -294,9 +322,53 @@ dialog img {
     .show-nav .bar::before { transform: rotate(45deg); }
     .show-nav .bar::after { transform: rotate(-45deg); }
 
+    /*body*/ 
+     #principale h1 {
+        font-size: 3rem;
+        padding: 20px;
+    }
+
+    video {
+        display: none;
+    }
+
+    #principale {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    left: 0%;
+    }
+
+    #openBtn {
+    font-size: 24px;
+    height: 300px;
+    width: 50%;
+    padding: 50px;
+    margin-left: 20px;
+    }
+
+    .text_resto_one {
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: #F0F0F0;
+    }
+
+    .text_resto_two {
+        margin-top: 0px;
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    .img_resto_exterieur {
+        display: none;
+    }
+
     /*footer*/
-    .footer_btn {
-    margin-left: 10px;
+    footer .footer_btn  {
+    margin-left: 20px;
     }
 
     .links_footer {
@@ -305,7 +377,11 @@ dialog img {
 
      .txt_footer {
     font-size: 0.7rem;
-}
+    }
+
+    footer .fleche_footer {
+    margin-right: 20px;
+    }
 }
 
 /* Navbar hover effet */
