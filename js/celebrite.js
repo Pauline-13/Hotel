@@ -14,15 +14,18 @@ function afficheur(celebs, imagesMap) {
     for (const celeb of celebs) {
         const name = celeb.name || "Inconnu";
         const lowerName = name.toLowerCase();
-        const imageURL = imagesMap[lowerName] || "images/default.jpg";
+        const celebData = imagesMap[lowerName];
+        const imageURL = celebData?.image || "images/default.jpg";
+        const avis = celebData?.avis || "";
 
         const divElement = document.createElement("div");
         divElement.classList.add("celebre");
 
         divElement.innerHTML = `
-            <div id="celebriter-content">
-                <img src="${imageURL}" alt="">
-                <p><strong>${name}</strong></p>
+            <div id="celebrite-content">
+                <img src="${imageURL}" alt="${name}">
+                <p class="nom"><strong>${name}</strong></p>
+                ${avis ? `<p class="avis">${avis}</p>` : ""}
             </div>`;
 
         sectionElement.appendChild(divElement);

@@ -65,6 +65,7 @@ video {
     height: 80vh;
     transform: rotate(90deg) translate(10%, 35%); 
     opacity: 0.8;
+    pointer-events: none;
 }
 
 /* Contenu principal */
@@ -172,7 +173,7 @@ video {
     .navbar_links {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        max-width: 48%; 
         position: absolute;
         top: 90px;
         left: 10;
